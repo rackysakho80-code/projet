@@ -22,16 +22,42 @@
     </div>
   </nav>
 
-  <section class="container mx-auto py-16 mt-20">
-    <h2 class="text-3xl font-bold mb-6 text-blue-900">Contact</h2>
-    <form class="grid grid-cols-1 gap-4 max-w-xl">
-      <input type="text" placeholder="Votre nom" class="p-1 border rounded" required>
-      <input type="email" placeholder="Votre mail" class="p-1 border rounded" required>
-      <input type="tel" placeholder="Votre numéro" class="p-1 border rounded">
-      <textarea placeholder="Votre message" rows="3" class="p-1 border rounded" required></textarea>
-      <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Envoyer</button>
-    </form>
-  </section>
+  <section class="container mx-auto py-16 mt-4">
+  <h1 class="text-3xl font-bold mb-2 text-blue-800 text-center">Contact</h1>
+  <h2 class="text-2xl font-bold mb-2 text-white-800 text-center">Voici mes coordonnées</h2>
+   <p class="text-lg mb-2 text-blue-800 text-center">Email : 
+      <a href="mailto:racky.sakho@gmail.com">
+        rackysakho80@gmail.com
+      </a>
+    </p>
+     <p class="text-lg mb-2 text-blue-800 text-center">Téléphone : 
+      <a href="tel:+221785416598">
+        +221 78 541 65 98
+      </a>
+    </p>
+    
+  <form class="max-w-lg mx-auto space-y-4">
+    <h2 class="text-2xl font-bold mb-2 text-white-800 text-center">Veuillez entrez vos coordonnées</h2>
+    <input type="text" placeholder="Votre nom" 
+           class="w-full p-1 rounded bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    
+    <input type="email" placeholder="Votre mail" 
+           class="w-full p-1 rounded bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    
+    <input type="tel" placeholder="Votre numéro" 
+           class="w-full p-1 rounded bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+    
+    <textarea placeholder="Votre message" rows="2"
+              class="w-full p-2 rounded bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+    
+    <div class="flex justify-center">
+      <button type="submit" 
+              class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-400">
+        Envoyer
+      </button>
+    </div>
+  </form>
+</section>
 
   <footer class="bg-black text-white text-center py-6 fixed bottom-0 w-full">
     <p>© 2026 Racky - Tous droits réservés</p>
