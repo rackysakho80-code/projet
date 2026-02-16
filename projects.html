@@ -11,7 +11,8 @@
   <nav class="bg-black bg-opacity-50 text-white p-4 fixed w-full top-0 shadow-md z-50">
     <div class="container mx-auto flex justify-between items-center">
       <span class="font-bold">Mon Portfolio</span>
-      <div class="flex flex-wrap space-x-4 mt-2 md:mt-0">
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">☰</button>
+      <div id="menu" class="hidden md:flex space-x-6">
       <div>
         <a href="index.html" class="mr-4 hover:text-blue-300">Présentation</a>
         <a href="about.html" class="mr-4 hover:text-blue-300">À propos</a>
@@ -21,7 +22,24 @@
         <a href="projects.html" class="mr-4 hover:text-blue-300">Projet</a>
         <a href="contact.html" class="hover:text-blue-300">Contact</a>
         </div>
-      </div>
+        </div>
+
+  <div id="mobile-menu" class="hidden flex-col space-y-2 mt-4 md:hidden">
+    <a href="index.html" class="hover:text-blue-300">Présentation</a>
+    <a href="about.html" class="hover:text-blue-300">À propos</a>
+    <a href="formation.html" class="hover:text-blue-300">Formation</a>
+    <a href="experience.html" class="hover:text-blue-300">Expérience</a>
+    <a href="skills.html" class="hover:text-blue-300">Compétences</a>
+    <a href="projects.html" class="hover:text-blue-300">Projets</a>
+    <a href="contact.html" class="hover:text-blue-300">Contact</a>
+  </div>
+  <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
     </div>
   </nav>
 
@@ -30,37 +48,38 @@
      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
     <div class="bg-white-50 bg-opacity-40 text-center rounded-lg shadow-lg overflow-hidden hover:scale-105 transition duration-300">
       <div class="p-4">
-        <h2 class="text-3xl font-semibold text-white-800 text-center">Flyer</h2>
-        <p class="text-white-700 mt-4 text-center">
-          <h2 class="text-2xl font-semibold text-white-800 text-center">Création d'un menu de RMS RESTO.</h2>
-          <img src="images/RS1.png" alt="Image" class="w-100 h-80 mx-auto mt-8 shadow-lg">
-          <img src="images/RS.png" alt="Image" class="w-90 h-80 mx-auto mt-2 shadow-lg">
+      <h2 class="text-3xl font-semibold text-white-800 text-center">Flyer</h2>
+       <p class="text-white-700 mt-4 text-center">
+        <div class="bg-white p-6 rounded-3xl shadow hover:scale-105 transition duration-400 mt-8">
+        <img src="images/RS1.png" alt="Image" class="w-100 h-80 mx-auto mt-8 shadow-lg">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Création d'un menu de RMS RESTO.</h3>
+        </div>
         </p>
-        </a>
       </div>
     </div>
-      <div class="bg-white-50 text-center">
-        <div class="p-4">
-          <h2 class="text-3xl font-semibold text-white-800 text-center">Projet HTML </h2>
+    <div class="bg-white-50 text-center">
+    <div class="p-4">
+      <h2 class="text-3xl font-semibold text-white-800 text-center">Projet HTML </h2>
+      <p class="text-white-700 mt-4 text-center">
+        <div class="bg-white p-6 rounded-3xl shadow hover:scale-105 transition duration-400 mt-8">
+        <img src="images/SR1.png" alt="Image" class="w-90 h-80 mx-auto mt-8 shadow-lg">
+        <h3 class="text-xl font-bold text-blue-600 mb-2">Creation d'un site web pour la gestion des logements dans une agence immobilière.</h3>
+        </div>
+      </p>
+    </div>
+    </div>
+      <div class="bg-white-50 text-center"> 
+        <div class="p-6">
+          <h2 class="text-3xl font-semibold text-white-800 text-center">Projet JavaScript</h2>
           <p class="text-white-700 mt-4 text-center">
-            <h2 class="text-2xl font-semibold text-white-800 text-center">Creation d'un site web pour la gestion des logements dans une agence immobilière.</h2> 
-            <img src="images/SR1.png" alt="Image" class="w-90 h-80 mx-auto mt-8 shadow-lg">
+            <div class="bg-white p-6 rounded-3xl shadow hover:scale-105 transition duration-400 mt-8">
+            <img src="images/JS.png" alt="Image" class="w-90 h-80 mx-auto mt-12 shadow-lg">
+            <h3 class="text-xl font-bold text-blue-600 mb-2">Creation d'une application web</h3>
+            </div>
           </p>
         </div>
-        <h2 class="text-3xl font-semibold text-white-800 text-center">Projet JavaScript</h2>
-          <p class="text-white-700 mt-4 text-center">
-            <h2 class="text-2xl font-semibold text-white-800 text-center">Creation d'une application web</h2> 
-            <img src="images/JS.png" alt="Image" class="w-90 h-80 mx-auto mt-8 shadow-lg">
-          </p>
-          </div>
-          <div class="p-6">
-        <h3 class="text-xl font-bold mb-2">Portfolio Professionel</h3>
-        <p class="text-gray-200 mb-4">Un site multipage avec TailwindCSS.</p>
-        <a href="https://github.com/rackysakho80-code/portfolio" target="_blank"
-           class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800">Voir plus</a>
       </div>
-
-      </div>
+    </div>
   </section>
 
   <footer class="bg-black text-white text-center py-2 fixed bottom-0 w-full">
